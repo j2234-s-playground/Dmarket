@@ -1,10 +1,10 @@
-package j2234.io.goods;
+package io.j2234.user;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GoodsApplicationTests {
+class UserApplicationTests {
 
     @Test
     void contextLoads() {

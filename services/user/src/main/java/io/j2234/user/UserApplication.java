@@ -1,13 +1,13 @@
-package j2234.io.goods;
+package io.j2234.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GoodsApplication {
+public class UserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GoodsApplication.class, args);
+        SpringApplication.run(UserApplication.class, args);
     }
 
 }
