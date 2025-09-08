@@ -30,6 +30,10 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("com.h2database:h2")
     annotationProcessor("org.projectlombok:lombok")
+    
+    implementation("io.github.openfeign.querydsl:querydsl-jpa:7.0")
+    annotationProcessor("io.github.openfeign.querydsl:querydsl-apt:7.0:jpa")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }

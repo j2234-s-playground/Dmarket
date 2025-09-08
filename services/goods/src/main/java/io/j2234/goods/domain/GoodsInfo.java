@@ -14,10 +14,10 @@ public class GoodsInfo {
     private Long id;
 
     @Column(name = "goods_nm", nullable = false)
-    private String goodsNm;
+    private String goodsName;
 
     @Column(name = "goods_nm_eng")
-    private String goodsNmEng;
+    private String goodsNameEng;
 
     @Column(name = "thumbnail_image_url")
     private String thumbnailImageUrl;
@@ -26,7 +26,8 @@ public class GoodsInfo {
     private String headDesc;
 
     @Column(name = "sex_code")
-    private Integer sexCode;
+    @Enumerated(value = EnumType.STRING)
+    private Sex sex;
 
     @Column(name = "brand_id") // Brand 연관
     private Long brandId;
@@ -49,6 +50,5 @@ public class GoodsInfo {
 
     @Column(name = "sales_price")
     private Integer salesPrice;
-
 
 }
